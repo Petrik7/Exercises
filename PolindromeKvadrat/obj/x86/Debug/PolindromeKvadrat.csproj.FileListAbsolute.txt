@@ -1,5 +1,0 @@
-C:\Users\Peter\Documents\GitHub\Exercises\PolindromeKvadrat\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Peter\Documents\GitHub\Exercises\PolindromeKvadrat\bin\Debug\PolindromeKvadrat.exe
-C:\Users\Peter\Documents\GitHub\Exercises\PolindromeKvadrat\bin\Debug\PolindromeKvadrat.pdb
-C:\Users\Peter\Documents\GitHub\Exercises\PolindromeKvadrat\obj\x86\Debug\PolindromeKvadrat.exe
-C:\Users\Peter\Documents\GitHub\Exercises\PolindromeKvadrat\obj\x86\Debug\PolindromeKvadrat.pdb
