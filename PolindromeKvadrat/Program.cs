@@ -20,5 +20,6 @@ namespace PolindromeKvadrat
             foreach (MatrixPoint point in biggestSquare)
                 Console.WriteLine("X: {0} Y:{1}", point.X, point.Y);
         }
+
     }
 }
