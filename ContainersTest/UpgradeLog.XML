@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ContainersTest">
+</Property><Property Name="Solution File" Value="C:\Petr\Sources\Containers\ContainersTest\ContainersTest.sln">
+</Property><Property Name="User Options File" Value="C:\Petr\Sources\Containers\ContainersTest\ContainersTest.suo">
+</Property><Property Name="Date" Value="Tuesday, September 18, 2012">
+</Property><Property Name="Time" Value="22:03 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ContainersTest.sln" Description="File successfully backed up as C:\Petr\Sources\Containers\ContainersTest\ContainersTest.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="ContainersTest.suo" Description="File successfully backed up as C:\Petr\Sources\Containers\ContainersTest\ContainersTest.suo.old">
+</Event><Event ErrorLevel="0" Project="ContainersTest" Source="ContainersTest.vcproj" Description="Converting project file 'C:\Petr\Sources\Containers\ContainersTest\ContainersTest.vcproj'.">
+</Event><Event ErrorLevel="1" Project="ContainersTest" Source="ContainersTest.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="ContainersTest" Source="ContainersTest.vcproj" Description="Done converting to new project file 'C:\Petr\Sources\Containers\ContainersTest\ContainersTest.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="ContainersTest" Source="ContainersTest.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ContainersTest.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ContainersTest.sln" Description="Converted">
+</Event></UpgradeLog>
