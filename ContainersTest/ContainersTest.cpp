@@ -6,6 +6,12 @@
 #include <iostream>
 #include <stack>
 #include <assert.h>
+#include <limits>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <iostream>
+#include <iterator>
 
 #include "Stack.h"
 #include "List.h"
@@ -23,6 +29,29 @@ int GCD(int a, int b)
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	/*
+	std::vector<std::string> input_data; 
+	std::copy(
+		std::istream_iterator<std::string>(std::cin), 
+		std::istream_iterator<std::string>(), 
+		std::back_inserter(input_data));
+
+	std::unique_copy(input_data.begin(), input_data.end(), std::ostream_iterator<std::string>(std::cout, " - \n"));
+	*/
+
+	std::vector<int> v;
+	v.push_back(1);
+	v.push_back(2);
+	std::vector<int> :: iterator it = v.begin();
+	++it;
+	std:: cout << *it << " - 2" << std::endl;
+	++it;
+	if(it == v.end())
+		std:: cout << " - end" << std::endl;
+
+	unsigned int a = std::numeric_limits<unsigned int>::max()/2;
+	unsigned int b = a + 1000000;
+	unsigned int res = a + b;
 
 	int g = GCD(252, 105);
 	g = GCD(105, 252);
@@ -66,6 +95,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	assert(11 == list.Front());
 	assert(44 == list.Back());
 
+	list.Rotate();
+
+	assert(44 == list.Front());
+	assert(11 == list.Back());
 
 	BinTreeTests binTreeTests;
 	binTreeTests.Execute();

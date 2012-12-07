@@ -115,6 +115,33 @@ public:
 	
 	}
 
+	void MakeAnLoop()
+	{
+		//TODO
+	}
+
+	void Rotate()
+	{
+		if(!head_)
+			return;
+		
+		Node * previous = head_;
+		Node * node_to_rotate = head_->next_;
+		head_->next_ = 0;
+		
+		head_ = tail_ ;
+		tail_ = previous ;
+
+		while(node_to_rotate)
+		{
+			Node * next = node_to_rotate->next_;
+			node_to_rotate->next_ = previous;
+			previous = node_to_rotate;
+			node_to_rotate = next;
+		}
+	}
+
+
 private:
 	Node * head_;
 	Node * tail_;

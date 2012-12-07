@@ -85,7 +85,6 @@
     <ClCompile Include="BinTreePinter.cpp" />
     <ClCompile Include="BinTreeTests.cpp" />
     <ClCompile Include="ContainersTest.cpp" />
-    <ClCompile Include="List.cpp" />
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
