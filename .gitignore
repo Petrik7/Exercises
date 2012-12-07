@@ -1,0 +1,12 @@
+ContainersTest/Debug/
+Matrix/Debug/
+Piramide/Bin/
+Piramide/Obj/
+PolindromeKvadrat/Obj/
+PolindromeKvadrat/Bin/
+MatrixCs/Obj/
+MatrixCs/Bin/
+*.ipch
+*-VAIO.*.user
+*.opensdf
+
