@@ -29,16 +29,6 @@ int GCD(int a, int b)
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	/*
-	std::vector<std::string> input_data; 
-	std::copy(
-		std::istream_iterator<std::string>(std::cin), 
-		std::istream_iterator<std::string>(), 
-		std::back_inserter(input_data));
-
-	std::unique_copy(input_data.begin(), input_data.end(), std::ostream_iterator<std::string>(std::cout, " - \n"));
-	*/
-
 	std::vector<int> v;
 	v.push_back(1);
 	v.push_back(2);
@@ -76,14 +66,12 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	List<int> list;
 	list.PushFront(11);
-		assert(11 == list.Front());
-		assert(11 == list.Back());
+		assert(11 == *(list.Begin()));
 	list.PopFront();
 		assert(list.IsEmpty());
 
 	list.PushBack(99);
-		assert(99 == list.Front());
-		assert(99 == list.Back());
+		assert(99 == *(list.Begin()));
 	list.PopBack();
 		assert(list.IsEmpty());
 
@@ -92,13 +80,22 @@ int _tmain(int argc, _TCHAR* argv[])
 	list.PushBack(44);
 	list.PushFront(11);
 
-	assert(11 == list.Front());
-	assert(44 == list.Back());
+	assert(11 == *(list.Begin()));
 
 	list.Rotate();
 
-	assert(44 == list.Front());
-	assert(11 == list.Back());
+	assert(44 == *(list.Begin()));
+	
+	List<int> :: iterator i = list.Begin();
+	int first_value = *i;
+	std::cout << "Printing list containt: " << std::endl;
+	for(; i != list.End(); ++i)
+	{
+		std::cout << *i << std::endl;
+	}
+
+	//List<int> :: iterator<int> iter_second = ++iter_first;
+	//int second_value = *iter_second;
 
 	BinTreeTests binTreeTests;
 	binTreeTests.Execute();

@@ -8,16 +8,33 @@ class List
 	class Node
 	{
 	public: 
-		Node(const T & t):value(t),next_(NULL)
-		{}
+		Node(const T & t):value(t),next_(NULL) {}
 		Node * next_;
 		T value;	
 	};
 
 public:
+
 	class iterator
 	{
 	public:
+		iterator(Node * node):node_(node) {}
+
+		T & operator * ()
+		{
+			return node_->value;
+		}
+
+		iterator & operator ++ ()
+		{
+			node_ = node_->next_;
+			return *this;
+		}
+
+		bool operator != (iterator const & other)
+		{
+			return node_ != other.node_;
+		}
 
 	private:
 		Node * node_;
@@ -25,22 +42,20 @@ public:
 	
 
 public:
-	List(void):head_(NULL),tail_(NULL)
+	List(void):head_(0),tail_(0)
 	{}
 	~List(void){};
 
-	T Front()
+	iterator Begin()
 	{
-		if(!head_)
-			throw "Empty list";
-		return head_->value;
+		iterator iter(head_);
+		return iter;
 	}
 
-	T Back()
+	iterator End()
 	{
-		if(!tail_)
-			throw "Empty list";
-		return tail_->value;
+		iterator iter(0);
+		return iter;
 	}
 
 	void PushBack(const T & t)
@@ -141,9 +156,7 @@ public:
 		}
 	}
 
-
 private:
 	Node * head_;
 	Node * tail_;
-
 };
